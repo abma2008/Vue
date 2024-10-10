@@ -15,7 +15,11 @@ const vm = Vue.createApp({
         // you should simply declare the function name directly and use async if there is a need to wait for a response.
         async randomUsers (){
             const res = await fetch('https://randomuser.me/api');
-            const {results} = await res.json()
+            const data = await res.json()
+            const results =  data.results //Extracting the results from data.results
+            // another way to do it: 
+            // const {results} = await res.json()
+            // this is the more recommended way.deconstruction
             this.first_name = results[0].name.first;
             this.last_name = results[0].name.last;
             this.email = results[0].email;
