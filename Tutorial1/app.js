@@ -2,8 +2,8 @@
 const vm = Vue.createApp({
     data() {
         return{
-            first_name: 'Ahmed',
-            last_name: 'Almashani',
+            first_name: 'Tester',
+            last_name: 'Tester',
             email: 'aaaa@gmail.com',
             gender: 'male',
             picture: 'https://randomuser.me/api/portraits/men/10.jpg'
