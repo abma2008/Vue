@@ -1,0 +1,19 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.information {
+    display:block;
+    margin: 0 auto;
+    top: 50%;
+    
+}
+.information button{
+    display:block;
+}
+.information img {
+    border-radius: 20px solid black;
+}
