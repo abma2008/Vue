@@ -5,15 +5,26 @@
     box-sizing: border-box;
 }
 
-.information {
+#VueApp {
     display:block;
     margin: 0 auto;
-    top: 50%;
+    width: 75%;
+    box-shadow: 10px 10px 10px 10px;
+    color: black;
+    margin-top:10%;
+    padding: 10px;
+    background: linear-gradient(white, grey)
     
 }
-.information button{
-    display:block;
+.male {
+    color: blue;
+    
 }
-.information img {
-    border-radius: 20px solid black;
+.female {
+    color: red;
+    
+}
+img {
+    width:100%;
+    box-shadow:5px 5px 5px 5px;
 }

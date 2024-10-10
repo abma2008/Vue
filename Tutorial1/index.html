@@ -17,14 +17,18 @@
             <div class=" w-75 m-auto">
                 <div class="row">
                     <div class="col-md-6">
-                        <h4>First Name: {{first_name}}</h4>
-                        <h4>last Name : {{last_name}}</h4>
-                        <h4>Email     : {{email}}</h4>
-                        <h4>Gender    : {{gender}}</h4>
+                        <h3>Total Records: {{total}}</h3>
+                        <div>
+                            <h4>First Name:</h4> <strong :class="gender">{{first_name}}</strong>
+                            <h4>Last Name :</h4> <strong :class="gender">{{last_name}}</strong>
+                            <h4>Email     :</h4> <strong :class="gender">{{email}}</strong>
+                            <h4>Gender    :</h4> <strong :class="gender">{{gender}}</strong>
+                            
+                        </div>
                     </div>
                 
                     <div class="col-md-6">
-                        <img v-bind:src="picture" v-bind:alt="`${first_name} ${last_name}`" class="rounded">
+                        <img v-bind:src="picture" v-bind:alt="`${first_name} ${last_name}`" class=" rounded">
                     </div>
                 </div>
                 <button v-on:click="randomUsers()" class="btn btn-outline-success d-block mt-2">Generate User</button>

@@ -6,7 +6,8 @@ const vm = Vue.createApp({
             last_name: 'Tester',
             email: 'aaaa@gmail.com',
             gender: 'male',
-            picture: 'https://randomuser.me/api/portraits/men/10.jpg'
+            picture: 'https://randomuser.me/api/portraits/men/10.jpg',
+            total: ''
             
         }
     },
@@ -20,6 +21,7 @@ const vm = Vue.createApp({
             this.email = results[0].email;
             this.gender = results[0].gender;
             this.picture = results[0].picture.large;
+            this.total = results.length
 
         }
     }
